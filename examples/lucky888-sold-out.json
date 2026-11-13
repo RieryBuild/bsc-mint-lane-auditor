@@ -1,0 +1,50 @@
+{
+  "contract": "0x7ea4514264795982f1cf91072f115619879e1236",
+  "wallet": "0x0000000000000000000000000000000000000000",
+  "rpc": "https://bsc-dataseed.binance.org",
+  "quantity": 1,
+  "blockNumber": 133272030,
+  "hasCode": true,
+  "bytecodeLength": 16160,
+  "selectors": {
+    "mint": [
+      "mint(uint256,address)"
+    ],
+    "price": [
+      "MINTING_PRICE()"
+    ],
+    "supply": [
+      "totalSupply()",
+      "MAX_SUPPLY()"
+    ],
+    "wallet": [
+      "balanceOf(address)"
+    ],
+    "state": [
+      "mintingActive()"
+    ]
+  },
+  "priceWei": "0",
+  "priceSource": "MINTING_PRICE()",
+  "supply": {
+    "totalSupply()": "88",
+    "MAX_SUPPLY()": "88"
+  },
+  "walletState": {},
+  "paused": null,
+  "saleActive": true,
+  "sim": {
+    "function": "mint(uint256,address)",
+    "ok": false,
+    "revert": {
+      "kind": "string",
+      "message": "Amount would exceed max supply.",
+      "reason": "Amount would exceed max supply."
+    },
+    "rawError": "RPC error 3: execution reverted: Amount would exceed max supply.: 0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001f416d6f756e7420776f756c6420657863656564206d617820737570706c792e00 | revert data: 0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001f416d6f756e7420776f756c6420657863656564206d617820737570706c792e00"
+  },
+  "verdict": "FREE_MINT_BLOCKED",
+  "reason": "sold out — totalSupply (88) has reached maxSupply (88)",
+  "checkedAt": "2026-11-13T02:29:03.912Z",
+  "repinned": 0
+}
