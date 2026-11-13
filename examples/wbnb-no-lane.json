@@ -1,0 +1,30 @@
+{
+  "contract": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",
+  "wallet": "0x0000000000000000000000000000000000000000",
+  "rpc": "https://bsc-rpc.publicnode.com",
+  "quantity": 1,
+  "blockNumber": 133272043,
+  "hasCode": true,
+  "bytecodeLength": 3124,
+  "selectors": {
+    "supply": [
+      "totalSupply()"
+    ],
+    "wallet": [
+      "balanceOf(address)"
+    ]
+  },
+  "priceWei": null,
+  "priceSource": null,
+  "supply": {
+    "totalSupply()": "1545807490616822185021281"
+  },
+  "walletState": {},
+  "paused": null,
+  "saleActive": null,
+  "sim": null,
+  "verdict": "NO_MINT_LANE",
+  "reason": "no known mint/claim selector in the deployed bytecode",
+  "checkedAt": "2026-11-13T02:29:09.932Z",
+  "repinned": 0
+}
