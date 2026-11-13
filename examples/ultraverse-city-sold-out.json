@@ -1,0 +1,49 @@
+{
+  "contract": "0xb9ec5608da9b4e9ebef82566affc509776ac6482",
+  "wallet": "0x0000000000000000000000000000000000000000",
+  "rpc": "https://bsc-rpc.publicnode.com",
+  "quantity": 1,
+  "blockNumber": 133272025,
+  "hasCode": true,
+  "bytecodeLength": 16607,
+  "selectors": {
+    "mint": [
+      "mint(address,uint256)"
+    ],
+    "price": [
+      "cost()"
+    ],
+    "supply": [
+      "totalSupply()",
+      "maxSupply()"
+    ],
+    "wallet": [
+      "balanceOf(address)"
+    ],
+    "state": [
+      "paused()"
+    ]
+  },
+  "priceWei": "0",
+  "priceSource": "cost()",
+  "supply": {
+    "totalSupply()": "1000",
+    "maxSupply()": "1000"
+  },
+  "walletState": {},
+  "paused": false,
+  "saleActive": null,
+  "sim": {
+    "function": "mint(address,uint256)",
+    "ok": false,
+    "revert": {
+      "kind": "empty",
+      "message": "empty revert from mint(address,uint256) — the selector is present in bytecode, so a live gate (often sold-out or whitelist) reverted with a bare revert() and no reason string"
+    },
+    "rawError": "RPC error 3: execution reverted"
+  },
+  "verdict": "FREE_MINT_BLOCKED",
+  "reason": "sold out — totalSupply (1000) has reached maxSupply (1000)",
+  "checkedAt": "2026-11-13T02:29:01.861Z",
+  "repinned": 0
+}
